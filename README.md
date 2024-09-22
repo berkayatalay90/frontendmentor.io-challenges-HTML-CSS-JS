@@ -1,2 +1,2 @@
 # frontendmentor.io-challenges-HTML-CSS-JS
-Completed frontendmentor.io challenges (HTML &amp; CSS &amp; JS)
+Hi! This is the repo for the completed frontendmentor.io challenges.
