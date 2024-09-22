@@ -1,0 +1,508 @@
+:root {
+    --pink: hsl(322, 100%, 66%);
+    --light-pink: hsl(321, 100%, 78%);
+    --light-red: hsl(0, 100%, 63%);
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --very-pale-blue: hsl(207, 100%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-top: 2.5%;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.fd-column {
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    border-radius: 20px;
+    padding: 5px 5px;
+    background-color: unset;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+img {
+    object-fit: contain;
+}
+
+header,
+main {
+    min-width: 50%;
+}
+
+/* Header  */
+
+header {
+    justify-content: space-between;
+    padding: 0 3%;
+}
+
+.brand-logo {
+    width: 12.5%;
+}
+
+.header-button {
+    color: var(--light-pink);
+    border: 2px solid var(--light-pink);
+    width: 7.5%;
+}
+
+/* Section-1 */
+
+.section-1 {
+    margin: 10% 0 5%;
+    text-align: center;
+    gap: 5rem;
+    padding: 0 10%;
+    align-items: center;
+}
+
+.headings {
+    gap: 1.5rem;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h5 {
+    padding: 0 29%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.headings button,
+.start-section button {
+    width: 25%;
+    border: none;
+    background-color: var(--pink);
+    color: var(--very-pale-blue);
+    padding: 1.25% 1%;
+    border-radius: 50px;
+    margin-top: 15px;
+}
+
+.mockup {
+    width: 70%;
+}
+
+/* Stats Section */
+
+.stats {
+    justify-content: space-between;
+    width: 65%;
+}
+
+.stats div {
+    gap: .5rem;
+    text-align: left;
+}
+
+.stats-icon {
+    width: 20%;
+}
+
+.stats-bold-text {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.stats-explanation {
+    color: silver;
+    font-size: .85rem;
+    align-self: center;
+}
+
+/* Features Section  */
+
+.features-section {
+    margin-top: 20%;
+    gap: 5rem;
+}
+
+.features-section div {
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.features-text-wrapper {
+    width: 50%;
+}
+
+.features-section h3 {
+    font-size: 1.75rem;
+}
+
+.features-section p {
+    font-size: .95rem;
+    margin-top: 4%;
+}
+
+.features-section img {
+    width: 40%;
+}
+
+.grow-together,
+.your-users {
+    background-color: var(--very-pale-blue);
+}
+
+.flowing-conversation {
+    flex-direction: row-reverse;
+}
+
+/* Start Section  */
+
+.start-section {
+    text-align: center;
+    margin: 10% 0;
+}
+
+.start-section h2 {
+    font-size: 2.25rem;
+}
+
+.start-section button {
+    width: 20%;
+    padding: 1% .5%;
+    margin-top: 2%;
+}
+
+/* Footer Section  */
+
+footer {
+    background-color: var(--very-dark-cyan);
+    color: var(--very-pale-blue);
+    padding: 10% 5% 5%;
+    gap: 2rem;
+}
+
+.footer-info-section {
+    justify-content: space-between;
+    line-height: 1.5rem;
+    font-size: .85rem;
+}
+
+.contact,
+.subscription {
+    gap: 1rem;
+}
+
+/* Contact Section */
+
+.contact {
+    width: 35%;
+    padding-right: 12%;
+}
+
+.footer-logo {
+    background-color: var(--very-pale-blue);
+    width: 60%;
+}
+
+.contact-wrapper {
+    gap: 1rem;
+}
+
+/* Subscription Section */
+
+.subscription {
+    width: 45%;
+}
+
+.subscription h4 {
+    font-size: 1.5rem;
+    font-family: unset;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.subscription p {
+    padding-right: 47%;
+}
+
+.subscription form {
+    width: 100%;
+    gap: 1.5rem;
+    margin-top: 2.5%;
+}
+
+input {
+    width: 47.5%;
+    border-radius: 5px;
+    height: 40px;
+}
+
+::placeholder {
+    padding-left: 5%;
+}
+
+.subscription-btn {
+    width: 20%;
+    background-color: var(--pink);
+    color: var(--very-pale-blue);
+    border-radius: 5px;
+}
+
+.email-error-msg {
+    display: none;
+    margin-top: -2%;
+    color: var(--light-red);
+}
+
+
+/* Social Media Section  */
+
+.social-media-container {
+    margin-top: 2.5%;
+    width: 25%;
+}
+
+.social-media-container ul {
+    gap: 1.25rem;
+}
+
+.social-media-container ul li i {
+    font-size: 1.75rem;
+}
+
+/* Active States  */
+
+button:hover,
+:focus {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.social-media-container ul li i:hover,
+:focus {
+    background-color: rgb(33, 190, 230);
+    cursor: pointer;
+    padding: 5px;
+}
+
+input:hover,
+:focus {
+    /* background-color: #f2f2f2; */
+    background-color: #fff;
+}
+
+/* ------------------- */
+
+/* Mobile Design */
+
+@media (max-width: 426px) {
+
+    /* Header  */
+
+    header {
+        padding: 2% 8%;
+        margin-bottom: 30%;
+    }
+
+    .brand-logo {
+        width: 35%;
+    }
+
+    .header-button {
+        padding: 3px;
+        width: 30%;
+    }
+
+    /* Section-1 */
+
+    .section-1 {
+        padding: 0 5%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        padding: 0 2%;
+    }
+
+    h5 {
+        padding: 0 5%;
+        font-size: .85rem;
+        ;
+    }
+
+    .headings button {
+        width: 65%;
+        padding: 3.5%;
+        margin: 25px 0 30px;
+    }
+
+    .mockup {
+        width: 90%;
+    }
+
+    /* Stats Section */
+
+    .stats {
+        flex-direction: column;
+        width: 50%;
+        gap: 5rem;
+    }
+
+    .stats div {
+        gap: unset;
+    }
+
+    .stats-icon {
+        width: 15%;
+    }
+
+    .stats-explanation {
+        font-size: 1rem;
+    }
+
+    /* Features Section  */
+
+    .features-section {
+        gap: 2.5rem;
+        text-align: center;
+    }
+
+    .features-section div {
+        flex-direction: column-reverse;
+        padding: 20% 5% 10%;
+    }
+
+    .features-section img {
+        width: 75%;
+    }
+
+    .features-text-wrapper {
+        width: 95%;
+    }
+
+    .features-section h3 {
+        font-size: 1.25rem;
+    }
+
+    .features-section p {
+        font-size: .80rem;
+    }
+
+    /* Start Section  */
+
+    .start-section {
+        margin: 20% 0;
+    }
+
+    .start-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .start-section button {
+        width: 50%;
+        padding: 2.5%;
+        margin-top: 7.5%;
+    }
+
+    /* Footer Section  */
+
+    footer {
+        padding: 20% 7.5% 10%;
+        gap: 3rem;
+    }
+
+    .footer-info-section {
+        flex-direction: column-reverse;
+        gap: 6rem;
+    }
+
+    /* Contact Section */
+
+    .contact {
+        width: 100%;
+        padding-right: unset;
+    }
+
+    /* Subscription Section */
+
+    .subscription {
+        width: 100%;
+    }
+
+    .subscription h4 {
+        font-size: 1.25rem;
+    }
+
+    .subscription p {
+        padding-right: unset;
+        font-size: .90rem;
+        line-height: 1.5;
+    }
+
+    .subscription form {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1rem;
+    }
+
+    input {
+        width: 100%;
+        height: 45px;
+    }
+
+    .subscription-btn {
+        width: 50%;
+        padding: 3.5%;
+    }
+}
+
+
+/* *** Style ***  
+
+*** Font Weights***
+
+**Body**
+Open Sans: 400, 600, 700
+font-family: 'Open Sans', sans-serif;
+
+**Headings**
+Poppins: 700
+font-family: 'Poppins', sans-serif;
+
+*** Colors ***
+
+### Primary
+
+- Pink: hsl(322, 100%, 66%)
+- Light Pink: hsl(321, 100%, 78%)
+- Light Red: hsl(0, 100%, 63%)
+
+### Neutral
+
+- Very Dark Cyan: hsl(192, 100%, 9%)
+- Very Pale Blue: hsl(207, 100%, 98%)
+
+ */
