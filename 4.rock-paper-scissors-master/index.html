@@ -24,31 +24,34 @@
 
 <body>
 
-  <div class="headings-wrapper">
-    <img src="images/logo.svg" alt="headline">
-    <div class="scoreboard">
-      <h5>SCORE</h5>
-      <h4>12</h4>
+  <main class="flex-container fd-column">
+
+    <div class="headings-wrapper flex-container">
+      <img src="images/logo.svg" alt="headline">
+      <div class="scoreboard flex-container fd-column">
+        <h5>SCORE</h5>
+        <h4 id="score">12</h4>
+      </div>
     </div>
-  </div>
+
+    <div class="button-container flex-container">
+      <button id="paper-icon" class="game-buttons"><img src="images/icon-paper.svg" alt="paper-icon"></button>
+      <button id="scissors-icon" class="game-buttons"><img src="images/icon-scissors.svg" alt="scissors-icon"></button>
+      <button id="rock-icon" class="game-buttons"><img src="images/icon-rock.svg" alt="rock-icon"></button>
+    </div>
+
+    <button id="rules-button">RULES</button>
+
+  </main>
 
 
-  <div class="button-container">
-    <button><img src="images/icon-paper.svg" alt="paper-icon"></button>
-    <button><img src="images/icon-scissors.svg" alt="scissors-icon"></button>
-    <button><img src="images/icon-rock.svg" alt="rock-icon"></button>
-  </div>
-
-
-  <button>RULES</button>
-
-  <div class="rules-container">
+  <!-- <div class="rules-container">
     <div class="rules title">
       <h5>RULES</h5>
       <img src="images/icon-close.svg" alt="">
     </div>
     <img src="images/image-rules.svg" alt="rules-img">
-  </div>
+  </div> -->
 
   <script src="js/index.js" charset="UTF-8"></script>
 </body>

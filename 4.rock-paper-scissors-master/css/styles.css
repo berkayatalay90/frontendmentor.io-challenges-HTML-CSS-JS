@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -9,9 +8,102 @@
 
 body {
     font-family: "Barlow Semi Condensed", sans-serif;
+    background-color: hsl(214, 47%, 23%);
+    padding-inline: 50px;
 }
 
 
+.flex-container {
+    display: flex;
+}
 
+.fd-column {
+    flex-direction: column;
+}
+
+main {
+    align-items: center;
+}
+
+.headings-wrapper {
+    border: 3px solid hsl(217, 16%, 45%);
+    width: 60%;
+    margin-block: 50px;
+    border-radius: 8px;
+    padding: 25px;
+    justify-content: space-between;
+}
+
+.scoreboard {
+    background-color: #f0f0f0;
+    width: 15%;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+.scoreboard h5 {
+    color: hsl(229, 64%, 46%);
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+#score {
+    color: hsl(229, 25%, 31%);
+    font-size: 4rem;
+}
+
+.button-container {
+    width: 700px;
+    gap: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game-buttons {
+    border: solid 20px;
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    padding: 50px;
+}
+
+.game-buttons:hover, .game-buttons:focus {
+    cursor: pointer;
+    transition: .5s ease;
+    scale: 1.1;
+}
+
+.button-container button:nth-child(1) {
+    border-color: hsl(230, 89%, 65%);
+    box-shadow: 0 15px 0 -5px hsl(230, 89%, 62%);
+}
+
+.button-container button:nth-child(2) {
+    border-color:  hsl(40, 84%, 53%);
+    box-shadow: 0 15px 0 -5px hsl(39, 89%, 49%);
+}
+
+.button-container button:nth-child(3) {
+    border-color: hsl(349, 70%, 56%);
+    box-shadow: 0 15px 0 -5px hsl(349, 71%, 52%);
+}
+
+.game-buttons img {
+    width: 70px;
+}
+
+#rules-button {
+    background-color: transparent;
+    color: #fff;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    width: 120px;
+    padding: 10px;
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
 
 /* font-weight: 600, 700 */
