@@ -1,3 +1,5 @@
+
+// Rules Box Display
 const rulesContainer = document.querySelector(".rules-container");
 const rulesConCloseButton = document.getElementById("close-icon");
 const rulesButton = document.getElementById("rules-button");
@@ -9,3 +11,13 @@ rulesButton.addEventListener("click",  () => {
 rulesConCloseButton.addEventListener("click",  () => {
     rulesContainer.classList.add("hide")
 })
+
+
+// Scoreboard change
+
+
+// Button Selections
+
+
+
+
